@@ -1,6 +1,7 @@
 #include "calculator.h"
 #include <iostream>
-#include <random>
+#include <cstdlib>
+#include <ctime> 
 #include <cmath> 
 using namespace std;
 
@@ -64,10 +65,9 @@ double generateRandom(double min, double max) {
         return 0;
     }
 
-    random_device rd;
-    mt19937 gen(rd());
-    uniform_real_distribution<double> distr(min, max);
+    srand(static_cast<unsigned int>(time(0)));
 
-    return distr(gen);
+    double random = min + static_cast<double>(rand()) / RAND_MAX * (max - min);
+    return random;
 }
 
