@@ -58,7 +58,7 @@ double lcm(double a, double b) {
     return abs(a * b) / gcd(a, b);
 }
 
-double generateRandomNumber(double min, double max) {
+double generateRandom(double min, double max) {
     if (min > max) {
         cout << "Error: min cannot be greater than max in random number generation." << endl;
         return 0;
