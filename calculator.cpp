@@ -63,8 +63,11 @@ double generateRandom(double min, double max) {
         cout << "Error: min cannot be greater than max in random number generation." << endl;
         return 0;
     }
+
     random_device rd;
     mt19937 gen(rd());
-    uniform_real_distribution<> distr(min, max);
+    uniform_real_distribution<double> distr(min, max);
+
     return distr(gen);
 }
+
