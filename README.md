@@ -1,1 +1,1 @@
-# CS2-Calculator-Janna-Jowayria
+# Simple Calculator Library

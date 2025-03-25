@@ -68,6 +68,3 @@ double generateRandomNumber(double min, double max) {
     uniform_real_distribution<> distr(min, max);
     return distr(gen);
 }
-
-
-
